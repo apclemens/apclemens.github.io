@@ -1,0 +1,69 @@
+#content {
+	margin: 90px 20% 40px;
+	padding: 10px;
+	border-style: solid;
+	display: inline-block;
+	position: relative;
+}
+
+#links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+}
+
+#links > li {
+	display: inline;
+	flex: 1;
+	text-align: center;
+}
+
+#front-image {
+	float: right;
+	padding-left: 10px;
+	height: 200px;
+}
+
+#non-links {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	overflow: hidden;
+	transition: height .5s linear;
+	height: 200px; /* same as height of front-image */
+}
+#non-links.hidden {
+	height: 0;
+}
+
+#header {
+	cursor: pointer;
+}
+
+#section {
+	margin: 0 50%;
+	padding: 0;
+	border-style: solid;
+	height: 0;
+	transition: margin .25s linear .5s,
+	            height .25s linear .75s,
+		    padding .25s linear .5s;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#section.show {
+	margin: 0 20%;
+	height: 200px;
+	padding: 10px;
+}
+
+.section-page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	white-space: initial;
+}
