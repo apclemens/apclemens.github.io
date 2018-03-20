@@ -1,7 +1,7 @@
 $('#links').find('a').each(function(index, value){
 	$(this).click(function(event) {
 		event.preventDefault();
-        transition_to(value.href.replace('.html', '.txt'), index)
+        transition_to(value.href.replace('.html', '-part.html'), index)
 	});
 });
 
