@@ -7,14 +7,14 @@ $('#links').find('a').each(function(index, value){
 
 window.onpopstate = function(e){
     if(e.state){
-        console.log(e.state);
+        transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle);
     }
 };
 
 function transition_to(page, index, newurl, newtitle) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     document.title = newtitle;
-    window.history.pushState({"pageTitle":newtitle},"", newurl);
+    window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);
     if ($('#non-links').height() == 0) {
         // transition over to new thing
         transition_over(page, index);
