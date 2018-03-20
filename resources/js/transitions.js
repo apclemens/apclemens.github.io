@@ -7,7 +7,11 @@ $('#links').find('a').each(function(index, value){
 
 window.onpopstate = function(e){
     if(e.state){
-        transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle, false);
+	    if(e.state.newtitle == "andrew clemens") {
+		    transition_down(false);
+	    } else {
+        	    transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle, false);
+	    }
     }
 };
 
@@ -71,10 +75,11 @@ function transition_up(page, index) {
 	setTimeout(function(){$('#section'+index).animate({'top': 0}, 250)}, 750);
 }
 
-function transition_down() {
+function transition_down(setstate) {
     $("#links>li>a").removeClass('current');
+	if (setstate){
     document.title = 'andrew clemens';
-    window.history.pushState({"pageTitle":'andrew clemens'},"", '/');
+    window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
     setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
