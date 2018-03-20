@@ -33,15 +33,15 @@ function transition_to(page, index, newurl, newtitle, setstate) {
 
 function transition_over(page, index) {
     var prev_index = $('.section-page')[0].id.replace('section', '');
-    $("#links>li:nth-child("+(+prev_index+1)+")>a").removeClass('current');
     var left;
-	if (prev_index == index) {
-		return;
-	} else if (prev_index > index) {
+    if (prev_index == index) {
+        return;
+    } else if (prev_index > index) {
         left = -$('#content').outerWidth();
     } else {
         left = $('#content').outerWidth();
     }
+    $("#links>li:nth-child("+(+prev_index+1)+")>a").removeClass('current');
     $('#section').append('<div class="section-page" id="section'+index+'" style="left: '+left+'px"></div>');
     $('#section'+index).load(page);
 
