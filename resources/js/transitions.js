@@ -102,7 +102,7 @@ $('#header').click(function(event) {
     transition_down(true);
 });
 
-function transition_open() {
+function transition_open_front() {
     var height = $('#content').height();
     $('.dropdown').css('bottom', '+=300px');
     $('#content').css({
@@ -130,4 +130,3 @@ function transition_open() {
         $('#content').css('height', 'auto');
     }, 700)
 }
-transition_open();
