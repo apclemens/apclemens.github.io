@@ -18,7 +18,6 @@ function transition_to(page, index) {
 
 function transition_over(page, index) {
 	var prev_index = $('.section-page')[0].id.replace('section', '');
-    $("#links>li:nth-child("+(prev_index+1)+")>a").removeClass('current');
     var left;
 	if (prev_index == index) {
 		return;
@@ -35,6 +34,7 @@ function transition_over(page, index) {
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
     setTimeout(function() {
+    	$("#links>li:nth-child("+(prev_index+1)+")>a").removeClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
     }, 600);
