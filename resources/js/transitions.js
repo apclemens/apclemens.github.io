@@ -6,15 +6,14 @@ $('#links').find('a').each(function(index, value){
 });
 
 window.onpopstate = function(e){
-	console.log(document);
     if(e.state){
 	    if(e.state.newtitle == "andrew clemens") {
 		    transition_down(false);
-		    console.log('hello');
 	    } else {
         	    transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle, false);
-		    console.log(e)
 	    }
+    } else {
+	    transition_down(false);
     }
 };
 
