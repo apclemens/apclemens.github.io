@@ -1,14 +1,14 @@
 $('#links').find('a').each(function(index, value){
 	$(this).click(function(event) {
 		event.preventDefault();
-        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'))
+        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'), $(this).text())
 	});
 });
 
-function transition_to(page, index, newurl) {
+function transition_to(page, index, newurl, newtitle) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
-    document.title = 'eyy its a new title';
-    window.history.pushState({"pageTitle":'new title'},"", newurl);
+    document.title = newtitle;
+    window.history.pushState({"pageTitle":newtitle},"", newurl);
     if ($('#non-links').height() == 0) {
         // transition over to new thing
         transition_over(page, index);
