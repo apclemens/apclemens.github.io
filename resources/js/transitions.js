@@ -5,6 +5,12 @@ $('#links').find('a').each(function(index, value){
 	});
 });
 
+window.onpopstate = function(e){
+    if(e.state){
+        console.log(e.state);
+    }
+};
+
 function transition_to(page, index, newurl, newtitle) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     document.title = newtitle;
