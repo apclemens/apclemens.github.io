@@ -6,6 +6,7 @@ $('#links').find('a').each(function(index, value){
 });
 
 window.onpopstate = function(e){
+	console.log(document);
     if(e.state){
 	    if(e.state.newtitle == "andrew clemens") {
 		    transition_down(false);
