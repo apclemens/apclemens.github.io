@@ -96,7 +96,7 @@ function transition_down(setstate) {
 
 $('#header').click(function(event) {
 	event.preventDefault();
-    transition_down();
+    transition_down(true);
 });
 
 function transition_open() {
