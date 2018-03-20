@@ -15,8 +15,8 @@ h2 {
 
 a {
   font-family: 'Roboto Mono', monospace;
-  outline: 0;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
 
 #content {
   margin: 90px 20% 40px;
@@ -93,5 +93,14 @@ a {
 
 #content, #section {
   background-color: #EAEAEA; }
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap; }
+
+.project {
+  height: 120px;
+  width: 120px;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
