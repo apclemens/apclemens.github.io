@@ -6,7 +6,7 @@ $('#links').find('a').each(function(index, value){
 });
 
 function transition_to(page, index) {
-    $("#links>li:nth-child("+(index-1)+")>a").addClass('current');
+    $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     if ($('#non-links').height() == 0) {
         // transition over to new thing
         transition_over(page, index);
@@ -18,7 +18,7 @@ function transition_to(page, index) {
 
 function transition_over(page, index) {
 	var prev_index = $('.section-page')[0].id.replace('section', '');
-    $("#links>li:nth-child("+(prev_index-1)+")>a").removeClass('current');
+    $("#links>li:nth-child("+(prev_index+1)+")>a").removeClass('current');
     var left;
 	if (prev_index == index) {
 		return;
@@ -62,6 +62,7 @@ function transition_up(page, index) {
 }
 
 function transition_down() {
+    $("#links>li>a").removeClass('current');
     setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
