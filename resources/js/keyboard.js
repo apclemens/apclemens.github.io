@@ -1,6 +1,5 @@
 window.onkeyup = function(e) {
     var key = e.keyCode ? e.keyCode : e.which;
-    console.log(key);
     switch(key) {
         case 65: // a
             transition_down(true);
