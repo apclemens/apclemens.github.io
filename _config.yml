@@ -1,6 +1,9 @@
 title: Andy Clemens
 
 collections:
-  websites
-  projects
-  themes
+  websites:
+    output: false
+  projects:
+    output: false
+  themes:
+    output: false
