@@ -24,6 +24,10 @@ a:hover {
   border-color: red;
   border-style: solid;
 }
+a.current {
+  background-color: blue;
+  color: white;
+}
 
 #content {
   margin: 90px 20% 40px;
