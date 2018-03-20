@@ -13,7 +13,7 @@ window.onpopstate = function(e){
 
 function transition_to(page, index, newurl, newtitle, setstate) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
-    if (setState){
+    if (setstate){
     document.title = newtitle;
     window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
     if ($('#non-links').height() == 0) {
