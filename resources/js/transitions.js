@@ -1,20 +1,21 @@
 $('#links').find('a').each(function(index, value){
 	$(this).click(function(event) {
 		event.preventDefault();
-        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'), $(this).text() + ' - andrew clemens')
+        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'), $(this).text() + ' - andrew clemens', true)
 	});
 });
 
 window.onpopstate = function(e){
     if(e.state){
-        transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle);
+        transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle, false);
     }
 };
 
-function transition_to(page, index, newurl, newtitle) {
+function transition_to(page, index, newurl, newtitle, setstate) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
+    if (setState){
     document.title = newtitle;
-    window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);
+    window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
     if ($('#non-links').height() == 0) {
         // transition over to new thing
         transition_over(page, index);
