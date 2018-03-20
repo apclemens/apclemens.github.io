@@ -130,3 +130,15 @@ function transition_open_front() {
         $('#content').css('height', 'auto');
     }, 700)
 }
+
+function transition_open_section(index) {
+    $('#non-links').css('height', 0);
+    $('#stem').css({
+            'opacity': 1,
+            'top': $('#content').offset().top + $('#content').outerHeight(),
+            'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
+    });
+    $('#stem').css('height', 40);
+    $('#section').css({'opacity': 1, 'height': 200});
+    $('#section'+index).css('top', 0);
+}
