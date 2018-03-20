@@ -6,6 +6,7 @@ $('#links').find('a').each(function(index, value){
 });
 
 function transition_to(page, index) {
+	console.log(page);
     if ($('#non-links').height() == 0) {
         // transition over to new thing
         transition_over(page, index);
