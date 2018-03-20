@@ -132,6 +132,7 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
+    $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     $('#non-links').css('height', 0);
     $('#stem').css({
             'opacity': 1,
