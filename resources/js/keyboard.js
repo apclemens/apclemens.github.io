@@ -3,7 +3,7 @@ window.onkeyup = function(e) {
     console.log(key);
     switch(key) {
         case 65: // a
-            transition_down();
+            transition_down(true);
             break;
         case 80: // p
             transition_to('/section_parts/projects', 0, '/projects', 'projects - andrew clemens', true);
