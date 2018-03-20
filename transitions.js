@@ -1,7 +1,7 @@
 $('#links').find('a').each(function(index, value){
 	$(this).click(function(event) {
 		event.preventDefault();
-        transition_to('/section_part'+value.href, index)
+        transition_to('/section_part'+value.getAttribute('href'), index)
 	});
 });
 
