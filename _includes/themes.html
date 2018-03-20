@@ -2,6 +2,6 @@
  Fancy-schmancy alternate themes I've created for this portfolio site. Note that these are likely not mobile-friendly, and that none of them are meant to be in any way "practical".
 <div id="scrollmenu" class="scrollmenu">
 {% for project in site.themes %}
-<div class="project">{{project.title}}</div>
+<a href="{{project.ext_url}}" class="project" style="background-image: url('/resources/images/{{project.image}}');"></a>
 {% endfor %}
 </div>
