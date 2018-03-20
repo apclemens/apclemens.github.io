@@ -2,6 +2,6 @@
 Various websites I've done for others.
 <div id="scrollmenu" class="scrollmenu">
 {% for project in site.websites %}
-<div class="project">{{project.title}}</div>
+<a href="{{project.ext_url}}" class="project" style="background-image: url('/resources/images/{{project.image}}');"></a>
 {% endfor %}
 </div>
