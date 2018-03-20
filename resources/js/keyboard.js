@@ -6,16 +6,16 @@ window.onkeyup = function(e) {
             transition_down();
             break;
         case 80: // p
-            transition_to('/section_parts/projects', 0, '/projects', 'projects');
+            transition_to('/section_parts/projects', 0, '/projects', 'projects - andrew clemens');
             break;
         case 87: // w
-            transition_to('/section_parts/websites', 1, '/websites', 'websites');
+            transition_to('/section_parts/websites', 1, '/websites', 'websites - andrew clemens');
             break;
         case 84: // t
-            transition_to('/section_parts/themes', 2, '/themes', 'themes');
+            transition_to('/section_parts/themes', 2, '/themes', 'themes - andrew clemens');
             break;
         case 67: // c
-            transition_to('/section_parts/contact', 3, '/contact', 'contact');
+            transition_to('/section_parts/contact', 3, '/contact', 'contact - andrew clemens');
             break;
     }
 }
