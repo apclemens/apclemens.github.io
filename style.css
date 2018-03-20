@@ -11,7 +11,8 @@ h1 {
   font-family: 'Limelight', cursive; }
 
 h2 {
-  font-family: 'Mina', sans-serif; }
+  font-family: 'Mina', sans-serif;
+  margin: 0; }
 
 a {
   font-family: 'Roboto Mono', monospace;
@@ -101,6 +102,7 @@ a {
 .project {
   height: 120px;
   width: 120px;
+  border-style: solid;
   display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
