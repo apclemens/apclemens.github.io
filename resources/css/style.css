@@ -113,6 +113,7 @@ a.current {
   height: 120px;
   width: 120px;
   border-style: solid;
+  background-size: cover;
   display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
