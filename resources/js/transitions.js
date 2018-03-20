@@ -76,6 +76,7 @@ function transition_up(page, index) {
 }
 
 function transition_down(setstate) {
+	if(document.title == 'andrew clemens'){return;}
     $("#links>li>a").removeClass('current');
 	if (setstate){
     document.title = 'andrew clemens';
