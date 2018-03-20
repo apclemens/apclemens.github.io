@@ -18,7 +18,7 @@ function transition_to(page, index) {
 
 function transition_over(page, index) {
     var prev_index = $('.section-page')[0].id.replace('section', '');
-    console.log("#links>li:nth-child("+(prev_index+1)+")>a");
+    console.log("#links>li:nth-child("+(1+prev_index)+")>a");
     var left;
 	if (prev_index == index) {
 		return;
