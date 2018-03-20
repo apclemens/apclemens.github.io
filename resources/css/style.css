@@ -18,6 +18,12 @@ a {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   outline: 0; }
+a:hover {
+  background-color: black;
+  color: white;
+  border-color: red;
+  border-style: solid;
+}
 
 #content {
   margin: 90px 20% 40px;
