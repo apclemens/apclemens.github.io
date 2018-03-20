@@ -1,7 +1,7 @@
 $('#links').find('a').each(function(index, value){
 	$(this).click(function(event) {
 		event.preventDefault();
-        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'), $(this).text() + ' - andrew clemens', true)
+        transition_to('/section_parts'+value.getAttribute('href'), index, value.getAttribute('href'), 'andrew clemens - ' + $(this).text(), true)
 	});
 });
 
