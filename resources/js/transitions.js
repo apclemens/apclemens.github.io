@@ -10,16 +10,18 @@ window.onpopstate = function(e){
     if(e.state){
 	    if(e.state.newtitle == "andrew clemens") {
 		    transition_down(false);
+		    console.log('hello');
 	    } else {
         	    transition_to(e.state.page, e.state.index, e.state.newurl, e.state.newtitle, false);
+		    console.log(e)
 	    }
     }
 };
 
 function transition_to(page, index, newurl, newtitle, setstate) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
-    if (setstate){
     document.title = newtitle;
+    if (setstate){
     window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
     if ($('#non-links').height() == 0) {
         // transition over to new thing
@@ -79,8 +81,8 @@ function transition_up(page, index) {
 function transition_down(setstate) {
 	if(document.title == 'andrew clemens'){return;}
     $("#links>li>a").removeClass('current');
-	if (setstate){
     document.title = 'andrew clemens';
+	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
     setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
