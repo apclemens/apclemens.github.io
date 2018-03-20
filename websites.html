@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>andrew clemens</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+	  <div id="content">
+          <h1 id="header" class="dropdown"><u>A</u>ndrew Clemens</h1>
+		  <div id="non-links" class="dropdown">
+		  <img id="front-image" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg">
+		  <div id="intro">
+			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros erat, semper a vulputate id, tempus in ante. Praesent sit amet lectus tincidunt, viverra odio eget, tempus enim. Etiam mollis tortor sed tortor ullamcorper, ac iaculis ligula venenatis. Aliquam non diam lorem. In quis magna purus. Integer ultricies ligula quis nulla ornare facilisis. Nam ex tellus, fringilla eget quam vel, tempor varius turpis. Pellentesque at scelerisque sodales. Praesent et dui faucibus. Nunc non varius velit. In volutpat in nibh sed hendrerit. Vivamus consequat, diam eu facilisis egestas, magna neque lobortis est, a eleifend mauris felis mattis elit. Fusce ullamcorper condimentum vehicula. 
+		  </div>
+		  </div>
+		  <ul id="links">
+              <li><a href="/projects"><u>p</u>rojects</a></li>
+              <li><a href="/websites"><u>w</u>ebsites</a></li>
+              <li><a href="/themes"><u>t</u>hemes</a></li>
+              <li><a href="/contact"><u>c</u>ontact</a></li>
+		  </ul>
+	  </div>
+      <div id="stem"></div>
+	  <div id="section">
+    <div id="section1" class="section-page">
+    {% include websites.html %}
+    </div>
+	  </div>
+	  <script src="/resources/js/transitions.js"></script>
+	  <script>transition_open_front();</script>
+    <script src="/resources/js/keyboard.js"></script>
+  </body>
+</html>
