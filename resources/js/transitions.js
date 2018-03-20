@@ -67,7 +67,7 @@ function transition_up(page, index) {
 function transition_down() {
     $("#links>li>a").removeClass('current');
     document.title = 'andrew clemens';
-    window.history.pushState({"pageTitle":'andrew clemens'},"", '');
+    window.history.pushState({"pageTitle":'andrew clemens'},"", '/');
     setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
