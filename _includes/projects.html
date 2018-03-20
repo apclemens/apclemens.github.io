@@ -1,0 +1,7 @@
+<h2>Projects</h2>
+Some of my personal side-projects
+<div id="scrollmenu" class="scrollmenu">
+{% for project in site.projects %}
+<div class="project">{{project.title}}</div>
+{% endfor %}
+</div>
