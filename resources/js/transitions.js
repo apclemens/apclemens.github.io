@@ -61,7 +61,7 @@ function transition_over(page, index) {
     	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
-	set_scroll();
+	if(index!=3) set_scroll();
     }, 600);
 }
 
@@ -89,7 +89,7 @@ function transition_up(page, index) {
 		$('#section'+index).animate({'top': 0}, 250)
 	}, 750);
 	setTimeout(function(){
-		set_scroll();
+		if(index!=3) set_scroll();
 	},1100);
 }
 
@@ -164,5 +164,5 @@ function transition_open_section(index) {
     $('#stem').css('height', 40);
     $('#section').css({'opacity': 1, 'height': 250});
     $('#section'+index).css('top', 0);
-	set_scroll();
+	if(index!=3) set_scroll();
 }
