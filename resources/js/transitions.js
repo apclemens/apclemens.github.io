@@ -105,11 +105,6 @@ function transition_down(setstate) {
 	}, 1000);
 }
 
-$('#header').click(function(event) {
-	event.preventDefault();
-    transition_down(true);
-});
-
 function transition_open_front() {
     var height = $('#content').height();
     $('.dropdown').css('bottom', '+=300px');
