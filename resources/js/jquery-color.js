@@ -1,5 +1,5 @@
 (function (d) {
-    d.each(["backgroundColor", "borderBottomColor", "borderLeftColor", "borderRightColor", "borderTopColor", "color", "outlineColor"], function (f, e) {
+    d.each(["backgroundColor", "borderColor", "--box-shadow-color", "borderBottomColor", "borderLeftColor", "borderRightColor", "borderTopColor", "color", "outlineColor"], function (f, e) {
         d.fx.step[e] = function (g) {
             if (!g.colorInit) {
                 g.start = c(g.elem, e);
