@@ -131,16 +131,20 @@ li.current > a {
 #contact input#name {
   position:absolute;
   width:180px;
+  height: 25px;
 }
 #contact input#email {
-  position: absolute;
+  position: relative;
   width: 180px;
+  height: 25px;
+  top: 45px;
 }
 #contact textarea {
   height:180px;
   position:absolute;
   left:210px;
   width: calc(100% - 315px);
+  resize: none;
 }
 #contact button {
   position: absolute;
