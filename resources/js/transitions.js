@@ -83,7 +83,6 @@ function transition_up(page, index) {
 
 function transition_down(setstate) {
     if(document.title == 'andrew clemens'){return;}
-    $("#links>li").removeClass('current');
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
@@ -94,6 +93,7 @@ function transition_down(setstate) {
         $('#section').css({'opacity': 0});
     }, 500);
     setTimeout(function(){
+    	$("#links>li").removeClass('current');
         $('#non-links').animate({'height': 250}, 250);
         $('#stem').css({'opacity': 0});
     }, 750);
