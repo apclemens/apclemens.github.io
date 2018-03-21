@@ -53,6 +53,7 @@ function transition_over(page, index) {
     	$("#links>li:nth-child("+(prev_index+1)+")>a").removeClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
+	set_scroll();
     }, 600);
 }
 
@@ -74,7 +75,10 @@ function transition_up(page, index) {
         $('#section').animate({'height': 250}, 250);
         $('#section').css({'opacity': 1});
     }, 500);
-	setTimeout(function(){$('#section'+index).animate({'top': 0}, 250)}, 750);
+	setTimeout(function(){
+		$('#section'+index).animate({'top': 0}, 250)
+		set_scroll();
+	}, 750);
 }
 
 function transition_down(setstate) {
