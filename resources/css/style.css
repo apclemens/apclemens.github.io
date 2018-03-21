@@ -128,4 +128,25 @@ li.current > a {
   background-size: cover;
   display: inline-block; }
 
+#contact input#name {
+  position:absolute;
+  width:180px;
+}
+#contact input#email {
+  position: absolute;
+  width: 180px;
+}
+#contact textarea {
+  height:180px;
+  position:absolute;
+  left:210px;
+  width: calc(100% - 315px);
+}
+#contact button {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  width: 75px;
+}
+
 /*# sourceMappingURL=style.css.map */
