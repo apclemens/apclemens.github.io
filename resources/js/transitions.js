@@ -71,7 +71,7 @@ function transition_up(page, index) {
         $('#stem').animate({'height': 40}, 250)
     }, 250);
     setTimeout(function(){
-        $('#section').animate({'height': 200}, 250);
+        $('#section').animate({'height': 250}, 250);
         $('#section').css({'opacity': 1});
     }, 500);
 	setTimeout(function(){$('#section'+index).animate({'top': 0}, 250)}, 750);
@@ -83,14 +83,14 @@ function transition_down(setstate) {
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
-    setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
+    setTimeout(function(){$('.section-page').animate({'top': -250}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
         $('#stem').animate({'height': 0}, 250);
         $('#section').css({'opacity': 0});
     }, 500);
     setTimeout(function(){
-        $('#non-links').animate({'height': 200}, 250);
+        $('#non-links').animate({'height': 250}, 250);
         $('#stem').css({'opacity': 0});
     }, 750);
 
@@ -140,6 +140,6 @@ function transition_open_section(index) {
             'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
     });
     $('#stem').css('height', 40);
-    $('#section').css({'opacity': 1, 'height': 200});
+    $('#section').css({'opacity': 1, 'height': 250});
     $('#section'+index).css('top', 0);
 }
