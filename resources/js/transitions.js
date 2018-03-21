@@ -5,36 +5,36 @@ $('#links').find('a').each(function(index, value){
 	});
 });
 
-body_background_colors = [
-	'#DADADA', // home page
-	'#CFD8DC', // projects
-	'#FFCDD2', // websites
-	'#C8E6C9', // themes
-	'#D1C4E9', // contact
+body_background_colors = [ // 300
+	'#E0E0E0', // home page - grey
+	'#9575CD', // projects - deep purple
+	'#E57373', // websites - red
+	'#81C784', // themes - green
+	'#90A4AE', // contact - blue grey
 	];
 
-border_colors = [
-	'#DADADA', // home page
-	'#CFD8DC', // projects
-	'#FFCDD2', // websites
-	'#C8E6C9', // themes
-	'#D1C4E9', // contact
+border_colors = [ // 900
+	'#212121', // home page
+	'#311B92', // projects
+	'#B71C1C', // websites
+	'#1B5E20', // themes
+	'#263238', // contact
 	];
 
-shadow_colors = [
-	'#DADADA', // home page
-	'#CFD8DC', // projects
-	'#FFCDD2', // websites
-	'#C8E6C9', // themes
-	'#D1C4E9', // contact
+shadow_colors = [ // 700
+	'#616161', // home page
+	'#512DA8', // projects
+	'#D32F2F', // websites
+	'#388E3C', // themes
+	'#455A64', // contact
 	];
 
-main_background_colors = [
-	'#DADADA', // home page
-	'#CFD8DC', // projects
-	'#FFCDD2', // websites
-	'#C8E6C9', // themes
-	'#D1C4E9', // contact
+main_background_colors = [ // 50
+	'#FAFAFA', // home page
+	'#EDE7F6', // projects
+	'#FFEBEE', // websites
+	'#E8F5E9', // themes
+	'#ECEFF1', // contact
 	];
 
 window.onpopstate = function(e){
