@@ -81,8 +81,8 @@ function transition_over(page, index) {
     $('.shadow').animate({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
-	    '--box-shadow-color': shadow_colors[index+1],
     }, 500);
+    $('.shadow').css('--box-shadow-color', shadow_colors[index+1]);
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
@@ -103,8 +103,8 @@ function transition_up(page, index) {
     $('.shadow').animate({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
-	    '--box-shadow-color': shadow_colors[index+1],
     }, 1000);
+    $('.shadow').css('--box-shadow-color', shadow_colors[index+1]);
     setTimeout(function(){$('#non-links').animate({'height': 0}, 250);}, 0);
     setTimeout(function(){
         $('#stem').css({
@@ -138,6 +138,7 @@ function transition_down(setstate) {
 	    'borderColor': border_colors[0],
 	    '--box-shadow-color': shadow_colors[0],
     }, 1000);
+    $('.shadow').css('--box-shadow-color', shadow_colors[0]);
     setTimeout(function(){$('.section-page').animate({'top': -250}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
@@ -171,6 +172,7 @@ function transition_open_front() {
 	    'borderColor': border_colors[0],
 	    '--box-shadow-color': shadow_colors[0],
     });
+    $('.shadow').css('--box-shadow-color', shadow_colors[0]);
 
     $('#content').animate({
         'height': height
@@ -200,6 +202,7 @@ function transition_open_section(index) {
 	    'borderColor': border_colors[index+1],
 	    '--box-shadow-color': shadow_colors[index+1],
     });
+    $('.shadow').css('--box-shadow-color', shadow_colors[index+1]);
 	if(index==-1){
 		transition_open_front();
 		return;
