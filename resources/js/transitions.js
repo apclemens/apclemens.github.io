@@ -99,7 +99,7 @@ function transition_up(page, index) {
 	$('#section'+index).css('top', -500);
 	$('#section'+index).load(page);
 
-    $('body').animate({'backgroundColor': body-background_colors[index+1]}, 1000);
+    $('body').animate({'backgroundColor': body_background_colors[index+1]}, 1000);
     $('.section').animate({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
@@ -132,7 +132,7 @@ function transition_down(setstate) {
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
-    $('body').animate({'backgroundColor': body-background_colors[0]}, 1000);
+    $('body').animate({'backgroundColor': body_background_colors[0]}, 1000);
     $('.section').animate({
 	    'backgroundColor': main_background_colors[0],
 	    'borderColor': border_colors[0],
@@ -165,7 +165,7 @@ function transition_open_front() {
         'height': 0,
     });
     $('#links li').css('bottom', -50);
-    $('body').css({'backgroundColor': body-background_colors[0]});
+    $('body').css({'backgroundColor': body_background_colors[0]});
     $('.section').css({
 	    'backgroundColor': main_background_colors[0],
 	    'borderColor': border_colors[0],
@@ -194,7 +194,7 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
-    $('body').css({'backgroundColor': body-background_colors[index+1]});
+    $('body').css({'backgroundColor': body_background_colors[index+1]});
     $('.section').css({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
