@@ -17,6 +17,7 @@ h2 {
 a {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
+  color: unset;
   outline: 0; }
 a:hover {
   background-color: black;
