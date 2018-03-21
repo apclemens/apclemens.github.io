@@ -24,7 +24,7 @@ a:hover {
   border-color: red;
   border-style: solid;
 }
-a.current {
+li:current > a {
   background-color: blue;
   color: white;
 }
@@ -52,7 +52,7 @@ a.current {
   display: inline;
   flex: 1;
   text-align: center;
-  transition: transform 1s linear;
+  transition: transform .3s linear;
   position: relative; }
 #links > li:hover {
   transform: rotateY(180deg);
