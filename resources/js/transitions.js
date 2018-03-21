@@ -91,11 +91,11 @@ function transition_down(setstate) {
     setTimeout(function(){$('.section-page').animate({'top': -250}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
+    	$("#links>li").removeClass('current');
         $('#stem').animate({'height': 0}, 250);
         $('#section').css({'opacity': 0});
     }, 500);
     setTimeout(function(){
-    	$("#links>li").removeClass('current');
         $('#non-links').animate({'height': 250}, 250);
         $('#stem').css({'opacity': 0});
     }, 750);
