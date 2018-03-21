@@ -1,4 +1,4 @@
-window.onkeyup = function(e) {
+window.onkeypress = function(e) {
     if($(':focus').hasClass('disable-hotkey')){return;}
     var key = e.keyCode ? e.keyCode : e.which;
     switch(key) {
