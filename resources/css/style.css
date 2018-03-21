@@ -110,8 +110,8 @@ a.current {
   white-space: nowrap; }
 
 .project {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border-style: solid;
   background-size: cover;
   display: inline-block; }
