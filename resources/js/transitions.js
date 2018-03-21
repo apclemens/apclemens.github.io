@@ -5,30 +5,6 @@ $('#links').find('a').each(function(index, value){
 	});
 });
 
-body_background_colors = [ // 300
-	'#E0E0E0', // home page - grey
-	'#9575CD', // projects - deep purple
-	'#E57373', // websites - red
-	'#81C784', // themes - green
-	'#90A4AE', // contact - blue grey
-	];
-
-border_colors = [ // 900
-	'#212121', // home page
-	'#311B92', // projects
-	'#B71C1C', // websites
-	'#1B5E20', // themes
-	'#263238', // contact
-	];
-
-main_background_colors = [ // 50
-	'#FAFAFA', // home page
-	'#EDE7F6', // projects
-	'#FFEBEE', // websites
-	'#E8F5E9', // themes
-	'#ECEFF1', // contact
-	];
-
 window.onpopstate = function(e){
     if(e.state){
 	    if(e.state.newtitle == "andrew clemens") {
@@ -69,11 +45,6 @@ function transition_over(page, index) {
     $('#section'+index).load(page);
 
     $('.section-page').animate({'left': '-='+left}, 500);
-    $('body').animate({'backgroundColor': body_background_colors[index+1]}, 500);
-    $('.shadow').animate({
-	    'backgroundColor': main_background_colors[index+1],
-	    'borderColor': border_colors[index+1],
-    }, 500);
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
@@ -90,11 +61,6 @@ function transition_up(page, index) {
 	$('#section'+index).css('top', -500);
 	$('#section'+index).load(page);
 
-    $('body').animate({'backgroundColor': body_background_colors[index+1]}, 1000);
-    $('.shadow').animate({
-	    'backgroundColor': main_background_colors[index+1],
-	    'borderColor': border_colors[index+1],
-    }, 1000);
     setTimeout(function(){$('#non-links').animate({'height': 0}, 250);}, 0);
     setTimeout(function(){
         $('#stem').css({
@@ -122,11 +88,6 @@ function transition_down(setstate) {
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
-    $('body').animate({'backgroundColor': body_background_colors[0]}, 1000);
-    $('.shadow').animate({
-	    'backgroundColor': main_background_colors[0],
-	    'borderColor': border_colors[0],
-    }, 1000);
     setTimeout(function(){$('.section-page').animate({'top': -250}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
@@ -156,11 +117,6 @@ function transition_open_front() {
         'height': 0,
     });
     $('#links li').css('bottom', -50);
-    $('body').css({'backgroundColor': body_background_colors[0]});
-    $('.shadow').css({
-	    'backgroundColor': main_background_colors[0],
-	    'borderColor': border_colors[0],
-    });
 
     $('#content').animate({
         'height': height
@@ -184,11 +140,6 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
-    $('body').css({'backgroundColor': body_background_colors[index+1]});
-    $('.shadow').css({
-	    'backgroundColor': main_background_colors[index+1],
-	    'borderColor': border_colors[index+1],
-    });
 	if(index==-1){
 		transition_open_front();
 		return;
