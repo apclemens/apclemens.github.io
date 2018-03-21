@@ -29,6 +29,10 @@ li.current > a {
   color: white;
 }
 
+.shadow {
+  --box-shadow-color: black;
+}
+
 #content {
   margin: 90px 20% 40px;
   padding: 10px;
