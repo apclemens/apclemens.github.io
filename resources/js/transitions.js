@@ -45,11 +45,11 @@ function transition_over(page, index) {
     $('#section'+index).load(page);
 
     $('.section-page').animate({'left': '-='+left}, 500);
+    $("#links>li:nth-child("+(index+1)+")").addClass('current');
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
     setTimeout(function() {
-    	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
 	if(index!=3) set_scroll();
