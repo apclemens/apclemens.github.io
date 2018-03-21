@@ -78,9 +78,6 @@ li.current > a {
   height: 200px;
   /* same as height of front-image */ }
 
-#header {
-  cursor: pointer; }
-
 #section {
   margin: 0 20%;
   padding: 0;
