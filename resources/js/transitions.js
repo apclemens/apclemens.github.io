@@ -18,7 +18,6 @@ window.onpopstate = function(e){
 };
 
 function transition_to(page, index, newurl, newtitle, setstate) {
-    $("#links>li:nth-child("+(index+1)+")").addClass('current');
     document.title = newtitle;
     if (setstate){
     window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
@@ -50,6 +49,7 @@ function transition_over(page, index) {
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
     setTimeout(function() {
+    	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
 	set_scroll();
@@ -71,6 +71,7 @@ function transition_up(page, index) {
         $('#stem').animate({'height': 40}, 250)
     }, 250);
     setTimeout(function(){
+    	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section').animate({'height': 250}, 250);
         $('#section').css({'opacity': 1});
     }, 500);
