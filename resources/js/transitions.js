@@ -77,8 +77,10 @@ function transition_up(page, index) {
     }, 500);
 	setTimeout(function(){
 		$('#section'+index).animate({'top': 0}, 250)
-		set_scroll();
 	}, 750);
+	setTimeout(function(){
+		set_scroll();
+	},1100);
 }
 
 function transition_down(setstate) {
