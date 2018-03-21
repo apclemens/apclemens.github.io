@@ -107,6 +107,7 @@ a.current {
 
 .scrollmenu {
   overflow: auto;
+  padding-top: 10px;
   white-space: nowrap; }
 
 .project {
