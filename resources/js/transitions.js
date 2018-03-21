@@ -151,3 +151,9 @@ function transition_open_section(index) {
     $('#section'+index).css('top', 0);
 	if(index!=3) set_scroll();
 }
+
+$('#header a').click(function(e) {
+	e.preventDefault();
+	if(document.title == 'andrew clemens') {return;}
+	transition_down();
+});
