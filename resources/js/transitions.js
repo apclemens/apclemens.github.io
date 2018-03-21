@@ -78,7 +78,7 @@ function transition_over(page, index) {
 
     $('.section-page').animate({'left': '-='+left}, 500);
     $('body').animate({'backgroundColor': body_background_colors[index+1]}, 500);
-    $('.section').animate({
+    $('.shadow').animate({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
 	    '--box-shadow-color': shadow_colors[index+1],
@@ -100,7 +100,7 @@ function transition_up(page, index) {
 	$('#section'+index).load(page);
 
     $('body').animate({'backgroundColor': body_background_colors[index+1]}, 1000);
-    $('.section').animate({
+    $('.shadow').animate({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
 	    '--box-shadow-color': shadow_colors[index+1],
@@ -133,7 +133,7 @@ function transition_down(setstate) {
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
     $('body').animate({'backgroundColor': body_background_colors[0]}, 1000);
-    $('.section').animate({
+    $('.shadow').animate({
 	    'backgroundColor': main_background_colors[0],
 	    'borderColor': border_colors[0],
 	    '--box-shadow-color': shadow_colors[0],
@@ -166,7 +166,7 @@ function transition_open_front() {
     });
     $('#links li').css('bottom', -50);
     $('body').css({'backgroundColor': body_background_colors[0]});
-    $('.section').css({
+    $('.shadow').css({
 	    'backgroundColor': main_background_colors[0],
 	    'borderColor': border_colors[0],
 	    '--box-shadow-color': shadow_colors[0],
@@ -195,7 +195,7 @@ function transition_open_front() {
 
 function transition_open_section(index) {
     $('body').css({'backgroundColor': body_background_colors[index+1]});
-    $('.section').css({
+    $('.shadow').css({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
 	    '--box-shadow-color': shadow_colors[index+1],
