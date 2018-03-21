@@ -19,6 +19,7 @@ window.onpopstate = function(e){
 
 function transition_to(page, index, newurl, newtitle, setstate) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
+    $("#links>li:nth-child("+(index+1)+")").addClass('current');
     document.title = newtitle;
     if (setstate){
     window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
@@ -42,6 +43,7 @@ function transition_over(page, index) {
         left = $('#content').outerWidth();
     }
     $("#links>li:nth-child("+(+prev_index+1)+")>a").removeClass('current');
+    $("#links>li:nth-child("+(+prev_index+1)+")").removeClass('current');
     $('#section').append('<div class="section-page" id="section'+index+'" style="left: '+left+'px"></div>');
     $('#section'+index).load(page);
 
@@ -50,7 +52,6 @@ function transition_over(page, index) {
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
     setTimeout(function() {
-    	$("#links>li:nth-child("+(prev_index+1)+")>a").removeClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
 	set_scroll();
@@ -84,6 +85,7 @@ function transition_up(page, index) {
 function transition_down(setstate) {
     if(document.title == 'andrew clemens'){return;}
     $("#links>li>a").removeClass('current');
+    $("#links>li").removeClass('current');
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
@@ -137,6 +139,7 @@ function transition_open_front() {
 
 function transition_open_section(index) {
     $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
+    $("#links>li:nth-child("+(index+1)+")").addClass('current');
     $('#non-links').css('height', 0);
     $('#stem').css({
             'opacity': 1,
