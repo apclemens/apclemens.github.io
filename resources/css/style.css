@@ -133,6 +133,9 @@ li.current > a {
     padding: 3px;
     font-family: 'Quicksand', sans-serif;
 }
+#contact input:focus{
+  border-color:red;
+}
 #contact input#name {
   position:absolute;
   width:180px;
@@ -152,6 +155,9 @@ li.current > a {
     resize: none;
     border: 2px solid black;
     padding: 3px;
+}
+#contact textarea:focus {
+  border-color: red;
 }
 #contact button {
     position: absolute;
