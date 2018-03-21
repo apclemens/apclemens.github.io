@@ -138,6 +138,10 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
+	if(index==-1){
+		transition_open_front();
+		return;
+	}
     $("#links>li:nth-child("+(index+1)+")").addClass('current');
     $('#non-links').css('height', 0);
     $('#stem').css({
