@@ -18,7 +18,6 @@ window.onpopstate = function(e){
 };
 
 function transition_to(page, index, newurl, newtitle, setstate) {
-    $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     document.title = newtitle;
     if (setstate){
     window.history.pushState({"page":page, "index":index, "newurl":newurl, "newtitle":newtitle},"", newurl);}
@@ -41,11 +40,11 @@ function transition_over(page, index) {
     } else {
         left = $('#content').outerWidth();
     }
-    $("#links>li:nth-child("+(+prev_index+1)+")>a").removeClass('current');
     $('#section').append('<div class="section-page" id="section'+index+'" style="left: '+left+'px"></div>');
     $('#section'+index).load(page);
 
     $('.section-page').animate({'left': '-='+left}, 500);
+    $("#links>li:nth-child("+(index+1)+")>a").addClass('current');
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
@@ -68,6 +67,7 @@ function transition_up(page, index) {
             'top': $('#content').offset().top + $('#content').outerHeight(),
             'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
         });
+    	$("#links>li:nth-child("+(index+1)+")>a").addClass('current');
         $('#stem').animate({'height': 40}, 250)
     }, 250);
     setTimeout(function(){
@@ -78,14 +78,14 @@ function transition_up(page, index) {
 }
 
 function transition_down(setstate) {
-	if(document.title == 'andrew clemens'){return;}
-    $("#links>li>a").removeClass('current');
+    if(document.title == 'andrew clemens'){return;}
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
     setTimeout(function(){$('.section-page').animate({'top': -200}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
+    	$("#links>li>a").removeClass('current');
         $('#stem').animate({'height': 0}, 250);
         $('#section').css({'opacity': 0});
     }, 500);
