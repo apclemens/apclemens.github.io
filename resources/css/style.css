@@ -22,11 +22,11 @@ a {
 a:hover {
   background-color: black;
   color: white;
-  border-color: red;
+  border-color: #F44336;
   border-style: solid;
 }
 li.current > a {
-  background-color: blue;
+  background-color: #303F9F;
   color: white;
 }
 
