@@ -39,6 +39,7 @@ li.current > a {
   border-style: solid;
   display: inline-block;
   position: relative;
+  z-index: 1;
   overflow: hidden; }
 
 #links {
@@ -89,6 +90,7 @@ li.current > a {
   height: 0;
   overflow: hidden;
   white-space: nowrap;
+  z-index: 1;
   position: relative;
   opacity: 0; }
 
