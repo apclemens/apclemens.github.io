@@ -17,22 +17,16 @@ h2 {
 a {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  transition: transform 1s linear;
   outline: 0; }
 a:hover {
   background-color: black;
   color: white;
   border-color: red;
-  transform: rotateY(180deg);
   border-style: solid;
 }
 a.current {
   background-color: blue;
-  transform: rotateX(180deg);
   color: white;
-}
-a.current:hover {
-  transform: rotateZ(180deg);
 }
 
 #content {
@@ -58,7 +52,18 @@ a.current:hover {
   display: inline;
   flex: 1;
   text-align: center;
+  transition: transform 1s linear;
   position: relative; }
+#links > li:hover {
+  transform: rotateY(180deg);
+}
+#links > li.current {
+  transform: rotateX(180deg);
+}
+#links > li.current:hover {
+  transform: rotateZ(180deg);
+}
+
 
 #front-image {
   float: right;
