@@ -24,7 +24,7 @@ a:hover {
   border-color: red;
   border-style: solid;
 }
-li:current > a {
+li.current > a {
   background-color: blue;
   color: white;
 }
