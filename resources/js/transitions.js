@@ -68,10 +68,10 @@ function transition_up(page, index) {
             'top': $('#content').offset().top + $('#content').outerHeight(),
             'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
         });
+    	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#stem').animate({'height': 40}, 250)
     }, 250);
     setTimeout(function(){
-    	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section').animate({'height': 250}, 250);
         $('#section').css({'opacity': 1});
     }, 500);
