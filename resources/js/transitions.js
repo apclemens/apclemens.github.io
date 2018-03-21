@@ -5,7 +5,31 @@ $('#links').find('a').each(function(index, value){
 	});
 });
 
-background_colors = [
+body_background_colors = [
+	'#DADADA', // home page
+	'#CFD8DC', // projects
+	'#FFCDD2', // websites
+	'#C8E6C9', // themes
+	'#D1C4E9', // contact
+	];
+
+border_colors = [
+	'#DADADA', // home page
+	'#CFD8DC', // projects
+	'#FFCDD2', // websites
+	'#C8E6C9', // themes
+	'#D1C4E9', // contact
+	];
+
+shadow_colors = [
+	'#DADADA', // home page
+	'#CFD8DC', // projects
+	'#FFCDD2', // websites
+	'#C8E6C9', // themes
+	'#D1C4E9', // contact
+	];
+
+main_background_colors = [
 	'#DADADA', // home page
 	'#CFD8DC', // projects
 	'#FFCDD2', // websites
@@ -53,7 +77,12 @@ function transition_over(page, index) {
     $('#section'+index).load(page);
 
     $('.section-page').animate({'left': '-='+left}, 500);
-    $('body').animate({'backgroundColor': background_colors[index+1]}, 500);
+    $('body').animate({'backgroundColor': body_background_colors[index+1]}, 500);
+    $('.section').animate({
+	    'backgroundColor': main_background_colors[index+1],
+	    'borderColor': border_colors[index+1],
+	    '--box-shadow-color': shadow_colors[index+1],
+    }, 500);
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
