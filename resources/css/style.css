@@ -140,6 +140,7 @@ li.current > a {
 }
 #contact input:focus{
   border-color:red;
+  background-color: white;
 }
 #contact input#name {
   position:absolute;
@@ -160,6 +161,7 @@ li.current > a {
     resize: none;
     border: 2px solid black;
     padding: 3px;
+    background-color: white;
 }
 #contact textarea:focus {
   border-color: red;
@@ -167,6 +169,7 @@ li.current > a {
 #contact button {
     position: absolute;
     right: 0px;
+    cursor: pointer;
     bottom: 0;
     width: 75px;
     border: 2px solid black;
