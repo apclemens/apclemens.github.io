@@ -21,14 +21,6 @@ border_colors = [ // 900
 	'#263238', // contact
 	];
 
-shadow_colors = [ // 700
-	'#616161', // home page
-	'#512DA8', // projects
-	'#D32F2F', // websites
-	'#388E3C', // themes
-	'#455A64', // contact
-	];
-
 main_background_colors = [ // 50
 	'#FAFAFA', // home page
 	'#EDE7F6', // projects
@@ -86,7 +78,6 @@ function transition_over(page, index) {
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
     setTimeout(function() {
-    	$('.shadow').css('--box-shadow-color', shadow_colors[index+1]);
     	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
@@ -123,7 +114,6 @@ function transition_up(page, index) {
 	}, 750);
 	setTimeout(function(){
 		if(index!=3) set_scroll();
-    $('.shadow').css('--box-shadow-color', shadow_colors[index+1]);
 	},1100);
 }
 
@@ -150,7 +140,6 @@ function transition_down(setstate) {
     }, 750);
 
 	setTimeout(function(){
-    $('.shadow').css('--box-shadow-color', shadow_colors[0]);
 		$('.section-page').remove()
 	}, 1000);
 }
@@ -171,7 +160,6 @@ function transition_open_front() {
     $('.shadow').css({
 	    'backgroundColor': main_background_colors[0],
 	    'borderColor': border_colors[0],
-	    '--box-shadow-color': shadow_colors[0],
     });
 
     $('#content').animate({
@@ -200,7 +188,6 @@ function transition_open_section(index) {
     $('.shadow').css({
 	    'backgroundColor': main_background_colors[index+1],
 	    'borderColor': border_colors[index+1],
-	    '--box-shadow-color': shadow_colors[index+1],
     });
 	if(index==-1){
 		transition_open_front();
