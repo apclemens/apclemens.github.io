@@ -148,4 +148,5 @@ function transition_open_section(index) {
     $('#stem').css('height', 40);
     $('#section').css({'opacity': 1, 'height': 250});
     $('#section'+index).css('top', 0);
+	setScroll();
 }
