@@ -55,13 +55,13 @@ li.current > a {
   transition: transform .3s linear;
   position: relative; }
 #links > li:hover {
-  transform: rotate3d(0,1,0,180deg);
+  transform: rotate3d(0,1,0,540deg);
 }
 #links > li.current {
-  transform: rotate3d(1,0,0,180deg);
+  transform: rotate3d(1,0,0,540deg);
 }
 #links > li.current:hover {
-  transform: rotate3d(0,0,1,180deg);
+  transform: rotate3d(0,0,1,540deg);
 }
 
 
