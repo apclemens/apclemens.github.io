@@ -17,16 +17,22 @@ h2 {
 a {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
+  transition: transform 1s linear;
   outline: 0; }
 a:hover {
   background-color: black;
   color: white;
   border-color: red;
+  transform: rotateY(180deg);
   border-style: solid;
 }
 a.current {
   background-color: blue;
+  transform: rotateX(180deg);
   color: white;
+}
+a.current:hover {
+  transform: rotateZ(180deg);
 }
 
 #content {
