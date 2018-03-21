@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{page.title}}</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+	  <div id="content">
+		  {% include index.html %}
+	  </div>
+      <div id="stem"></div>
+	  <div id="section">
+		  {{content}}
+	  </div>
+	  <script src="/resources/js/transitions.js"></script>
+    <script src="/resources/js/keyboard.js"></script>
+    <script src="/resources/js/scroll.js"></script>
+	  <script>transition_open_section({{page.section_id}});</script>
+  </body>
+</html>
