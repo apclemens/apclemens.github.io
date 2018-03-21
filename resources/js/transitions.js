@@ -5,6 +5,14 @@ $('#links').find('a').each(function(index, value){
 	});
 });
 
+background_colors = [
+	'#DADADA', // home page
+	'#CFD8DC', // projects
+	'#FFCDD2', // websites
+	'#C8E6C9', // themes
+	'#D1C4E9', // contact
+	];
+
 window.onpopstate = function(e){
     if(e.state){
 	    if(e.state.newtitle == "andrew clemens") {
@@ -45,6 +53,7 @@ function transition_over(page, index) {
     $('#section'+index).load(page);
 
     $('.section-page').animate({'left': '-='+left}, 500);
+    $('body').animate({'backgroundColor': background_colors[index+1]}, 500);
     $('#stem').animate(
             {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
             , 500);
@@ -61,6 +70,7 @@ function transition_up(page, index) {
 	$('#section'+index).css('top', -500);
 	$('#section'+index).load(page);
 
+    $('body').animate({'backgroundColor': background_colors[index+1]}, 1000);
     setTimeout(function(){$('#non-links').animate({'height': 0}, 250);}, 0);
     setTimeout(function(){
         $('#stem').css({
@@ -88,6 +98,7 @@ function transition_down(setstate) {
     document.title = 'andrew clemens';
 	if (setstate){
     window.history.pushState({"newtitle":'andrew clemens'},"", '/');}
+    $('body').animate({'backgroundColor': background_colors[0]}, 1000);
     setTimeout(function(){$('.section-page').animate({'top': -250}, 250);}, 0);
     setTimeout(function(){$('#section').animate({'height': 0}, 250);}, 250);
     setTimeout(function(){
@@ -138,6 +149,7 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
+    $('body').css({'backgroundColor': background_colors[index+1]});
 	if(index==-1){
 		transition_open_front();
 		return;
