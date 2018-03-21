@@ -137,10 +137,10 @@ li.current > a {
     border: 2px solid black;
     padding: 3px;
     font-family: 'Quicksand', sans-serif;
+  background-color: white;
 }
 #contact input:focus{
   border-color:red;
-  background-color: white;
 }
 #contact input#name {
   position:absolute;
