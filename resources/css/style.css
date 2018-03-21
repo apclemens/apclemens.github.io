@@ -7,6 +7,9 @@ html, body {
   background-color: #DADADA;
   font-family: 'Quicksand', sans-serif; }
 
+h1 a {
+  font-family: 'Limelight', cursive; }
+
 h2 {
   font-family: 'Mina', sans-serif;
   margin: 0; }
@@ -25,9 +28,6 @@ li.current > a {
   background-color: blue;
   color: white;
 }
-
-h1 {
-  font-family: 'Limelight', cursive; }
 
 #content {
   margin: 90px 20% 40px;
