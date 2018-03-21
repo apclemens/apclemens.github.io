@@ -8,7 +8,7 @@ html, body {
   font-family: 'Quicksand', sans-serif; }
 
 h1 {
-  font-family: 'Limelight', cursive; }
+  font-family: 'Limelight', cursive !important; }
 
 h2 {
   font-family: 'Mina', sans-serif;
