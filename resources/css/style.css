@@ -186,7 +186,7 @@ li.current > a {
     padding: 3px;
   font-family: 'Quicksand', sans-serif;}
 
-#contact#image-wrapper {
+#image-wrapper {
   position: absolute;
   bottom: 0;
   width: 186px;
@@ -195,12 +195,12 @@ li.current > a {
   height: 100px;
   overflow: hidden;
 }
-#contact#image-wrapper img {
+#image-wrapper img {
   width: 100%;
   top: 0;
   position: absolute;
   left: 0;
 }
-#contact#image-wrapper img:hover {
+#image-wrapper:hover img {
   opacity:.5;
 }
