@@ -47,7 +47,7 @@ function transition_over(page, index) {
     $('.section-page').animate({'left': '-='+left}, 500);
     $("#links>li:nth-child("+(index+1)+")").addClass('current');
     $('#stem').animate(
-            {'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8}
+            {'left': ''+(25*index+12.5)+'%'}
             , 500);
     setTimeout(function() {
         $('#section'+prev_index).remove();
@@ -65,8 +65,7 @@ function transition_up(page, index) {
     setTimeout(function(){
         $('#stem').css({
             'opacity': 1,
-            'top': $('#content').offset().top + $('#content').outerHeight(),
-            'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
+            'left': ''+(25*index+12.5)+'%'
         });
     	$("#links>li:nth-child("+(index+1)+")").addClass('current');
         $('#stem').animate({'height': 40}, 250)
@@ -143,8 +142,7 @@ function transition_open_section(index) {
     $('#non-links').css('height', 0);
     $('#stem').css({
             'opacity': 1,
-            'top': $('#content').offset().top + $('#content').outerHeight(),
-            'left': $('#content').offset().left + $('#content').outerWidth()*(2*index+1)/8
+            'left': ''+(25*index+12.5)+'%'
     });
     $('#stem').css('height', 40);
     $('#section').css({'opacity': 1, 'height': 250});
