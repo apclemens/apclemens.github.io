@@ -185,3 +185,22 @@ li.current > a {
     border: 2px solid black;
     padding: 3px;
   font-family: 'Quicksand', sans-serif;}
+
+#contact#image-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 186px;
+  left: 0;
+  border: 2px solid black;
+  height: 100px;
+  overflow: hidden;
+}
+#contact#image-wrapper img {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+#contact#image-wrapper img:hover {
+  opacity:.5;
+}
