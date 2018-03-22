@@ -147,6 +147,7 @@ function transition_open_front() {
     $('.dropdown').css('bottom', '+=300px');
     $('#content').css({
         'height': 0,
+        'overflow': 'hidden',
     });
     $('#links li').css('bottom', -50);
 
@@ -167,7 +168,10 @@ function transition_open_front() {
         }, 100 * index + 900);
     });
     setTimeout(function() {
-        $('#content').css('height', 'auto');
+        $('#content').css({
+            'height': 'auto',
+            'overflow': 'auto',
+        });
     }, 700)
 }
 
