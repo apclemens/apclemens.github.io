@@ -68,7 +68,7 @@ function transition_up(page, index) {
             'left': ''+(25*index+12.5)+'%'
         });
     	$("#links>li:nth-child("+(index+1)+")").addClass('current');
-        $('#stem').animate({'height': 40}, 250)
+        $('#stem').animate({'height': 45}, 250)
     }, 250);
     setTimeout(function(){
         $('#section').animate({'height': 250}, 250);
@@ -144,7 +144,7 @@ function transition_open_section(index) {
             'opacity': 1,
             'left': ''+(25*index+12.5)+'%'
     });
-    $('#stem').css('height', 40);
+    $('#stem').css('height', 45);
     $('#section').css({'opacity': 1, 'height': 250});
     $('#section'+index).css('top', 0);
 	if(index!=3) set_scroll();
