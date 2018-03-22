@@ -170,9 +170,13 @@ function transition_open_front() {
     setTimeout(function() {
         $('#content').css({
             'height': 'auto',
-            'overflow': 'visible',
         });
     }, 700)
+    setTimeout(function() {
+        $('#content').css({
+            'overflow': 'visible',
+        });
+    }, 1450)
 }
 
 function transition_open_section(index) {
