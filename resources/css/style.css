@@ -49,8 +49,7 @@ li.current > a {
   border-style: solid;
   display: inline-block;
   position: relative;
-  z-index: 1;
-  overflow: hidden; }
+  z-index: 1; }
 
 #links {
   list-style-type: none;
