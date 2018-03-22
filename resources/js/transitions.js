@@ -48,12 +48,11 @@ function transition_over(page, index) {
     $("#links>li:nth-child("+(index+1)+")").addClass('current');
     $('#stem').animate(
             {'left': ''+(25*index+12.5)+'%'}
-            , 500);
-    setTimeout(function() {
+            , 500, function() {
         $('#section'+prev_index).remove();
         $('.section-page').css('left',0);
 	if(index!=3) set_scroll();
-    }, 600);
+    });
 }
 
 function transition_up(page, index) {
