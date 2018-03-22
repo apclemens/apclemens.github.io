@@ -201,6 +201,3 @@ li.current > a {
   position: absolute;
   left: 0;
 }
-#image-wrapper:hover img {
-  opacity:.5;
-}
