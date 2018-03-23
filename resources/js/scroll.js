@@ -14,4 +14,13 @@ function set_scroll() {
 		// IE 6/7/8
 		document.getElementById('scrollmenu').attachEvent("onmousewheel", scrollHorizontally);
 	}
+
+	$('.project').each(function(index, value){
+	  var ths = this;
+	  $(this).children('img').hover(function(){
+	    $(this).css('top', -6-$(ths).children('span').height())
+	  }, function(){
+	    $(this).css('top', 0)
+	  })
+	})
 }
