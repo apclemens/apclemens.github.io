@@ -163,6 +163,8 @@ li.current > a {
   bottom: 0;
   position: absolute;
   white-space: normal;
+  width: 100%;
+  text-align: center;
 }
 
 #contact input {
