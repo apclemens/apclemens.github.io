@@ -17,8 +17,8 @@ function set_scroll() {
 
 	$('.project').each(function(index, value){
 	  var ths = this;
-	  $(this).children('img').hover(function(){
-	    $(this).css('top', -6-$(ths).children('span').height())
+	  $(this).hover(function(){
+	    $(ths).children('img').css('top', -6-$(ths).children('span').height())
 	  }, function(){
 	    $(this).css('top', 0)
 	  })
