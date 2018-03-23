@@ -20,7 +20,7 @@ function set_scroll() {
 	  $(this).hover(function(){
 	    $(ths).children('img').css('top', -6-$(ths).children('span').height())
 	  }, function(){
-	    $(this).css('top', 0)
+	    $(ths).children('img').css('top', 0)
 	  })
 	})
 }
