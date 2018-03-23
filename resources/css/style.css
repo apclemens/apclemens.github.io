@@ -152,6 +152,8 @@ li.current > a {
   position: relative;
   top: 0;
   transition: top .1s linear;
+  border: 2px solid red;
+  margin: -2px;
 }
 
 .project:hover img {
