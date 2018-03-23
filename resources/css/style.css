@@ -139,8 +139,29 @@ li.current > a {
   height: 150px;
   width: 150px;
   border-style: solid;
-  background-size: cover;
-  display: inline-block; }
+  display: inline-block;
+  background-color: black;
+  overflow: hidden;
+  position: absolute;
+}
+
+.project img {
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  top: 0;
+  transition: top .1s linear;
+}
+
+.project:hover img {
+  top: -50px;
+}
+
+.project span {
+  z-index: 1;
+  bottom: 0;
+  position: absolute;
+}
 
 #contact input {
     border: 2px solid black;
