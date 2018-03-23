@@ -142,7 +142,8 @@ li.current > a {
   display: inline-block;
   background-color: black;
   overflow: hidden;
-  position: absolute;
+  position: relative;
+  padding: 0;
 }
 
 .project img {
