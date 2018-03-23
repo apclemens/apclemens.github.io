@@ -162,6 +162,7 @@ li.current > a {
   z-index: 1;
   bottom: 0;
   position: absolute;
+  white-space: normal;
 }
 
 #contact input {
