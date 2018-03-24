@@ -233,3 +233,20 @@ li.current > a {
   position: absolute;
   left: 0;
 }
+
+#social {
+	position: relative;
+}
+#social svg {
+	width: 32px;
+	float: right;
+	bottom: 0;
+}
+
+#social a {
+	padding: 0;
+}
+#social a:hover {
+  background-color: unset;
+  border: none;
+}
