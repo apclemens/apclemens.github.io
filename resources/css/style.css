@@ -245,8 +245,14 @@ li.current > a {
 
 #social a {
 	padding: 0;
+	display: inline-block;
+	float: right;
 }
 #social a:hover {
-  background-color: unset;
   border: none;
+	filter: invert(100%);
+	background-color: white;
+	color: unset;
+}
+#social div:hover {
 }
