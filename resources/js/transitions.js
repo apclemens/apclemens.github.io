@@ -18,7 +18,6 @@ window.onpopstate = function(e) {
 };
 
 function transition_to(page, index, newurl, newtitle, setstate) {
-    page = page + '.html';
     document.title = newtitle;
     if (setstate) {
         window.history.pushState({
