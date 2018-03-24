@@ -80,6 +80,13 @@ function transition_up(page, index) {
         $('#stem').animate({
             'height': 45
         }, 250)
+        $('#rotate').animate({
+          'transform': 'rotate(360deg)'
+        }, 250, function() {
+          $('#rotate').css({
+            'transform': 'rotate(0deg)'
+          });
+        })
     }, 250);
     setTimeout(function() {
         $('#section').animate({
