@@ -31,7 +31,7 @@ li.current > a {
   color: white;
 }
 
-.rotate {
+#rotate {
   display: inline-block;
 }
 
