@@ -31,6 +31,10 @@ li.current > a {
   color: white;
 }
 
+.rotate {
+  display: inline-block;
+}
+
 #header a {
   padding: 5px;
 }
