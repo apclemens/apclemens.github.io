@@ -241,6 +241,7 @@ li.current > a {
 #social {
     position: relative;
     margin: 10px 10px -10px -10px;
+    z-index: 2;
 }
 #social svg {
     width: 32px;
