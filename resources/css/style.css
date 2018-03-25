@@ -31,6 +31,9 @@ li.current > a {
   color: white;
 }
 
+#header {
+    margin: 20px 0;
+
 #rotate {
   display: inline-block;
 }
@@ -236,6 +239,7 @@ li.current > a {
 
 #social {
 	position: relative;
+    margin: 10px 10px -10px -10px;
 }
 #social svg {
 	width: 32px;
