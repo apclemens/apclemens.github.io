@@ -33,6 +33,7 @@ li.current > a {
 
 #header {
     margin: 20px 0;
+}
 
 #rotate {
   display: inline-block;
@@ -238,23 +239,23 @@ li.current > a {
 }
 
 #social {
-	position: relative;
+    position: relative;
     margin: 10px 10px -10px -10px;
 }
 #social svg {
-	width: 32px;
-	float: right;
-	bottom: 0;
+    width: 32px;
+    float: right;
+    bottom: 0;
 }
 
 #social a {
-	padding: 0;
-	display: inline-block;
-	float: right;
+    padding: 0;
+    display: inline-block;
+    float: right;
 }
 #social a:hover {
-  border: none;
-	filter: invert(100%);
-	background-color: white;
-	color: unset;
+    border: none;
+    filter: invert(100%);
+    background-color: white;
+    color: unset;
 }
