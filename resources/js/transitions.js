@@ -60,6 +60,7 @@ function transition_over(page, index) {
         $('#section' + prev_index).remove();
         $('.section-page').css('left', 0);
         if (index != 3) set_scroll();
+        else $('#cat-image-wrapper').click(function(){window.location.href="https://www.instagram.com/_jackie_the_cat/"});
     });
 }
 
@@ -96,6 +97,7 @@ function transition_up(page, index) {
     }, 750);
     setTimeout(function() {
         if (index != 3) set_scroll();
+        else $('#cat-image-wrapper').click(function(){window.location.href="https://www.instagram.com/_jackie_the_cat/"});
     }, 1100);
 }
 
