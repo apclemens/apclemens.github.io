@@ -197,6 +197,7 @@ function transition_open_section(index) {
     });
     $('#section' + index).css('top', 0);
     if (index != 3) set_scroll();
+    else $('#cat-image-wrapper').click(function(){window.location.href="https://www.instagram.com/_jackie_the_cat/"});
 }
 
 $('#header a').click(function(e) {

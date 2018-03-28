@@ -227,7 +227,7 @@ li.current > a {
     padding: 3px;
   font-family: 'Quicksand', sans-serif;}
 
-#image-wrapper {
+#cat-image-wrapper {
   position: absolute;
   bottom: 0;
   width: 186px;
@@ -236,7 +236,7 @@ li.current > a {
   height: 100px;
   overflow: hidden;
 }
-#image-wrapper img {
+#cat-image-wrapper img {
   width: 100%;
   top: 0;
   position: absolute;
