@@ -137,7 +137,9 @@ li.current > a {
   position: relative;
   height: 0;
   top: -5px;
-  opacity: 0; }
+  margin: 0 -2px;
+  opacity: 0;
+}
 
 #content, #section {
   background-color: #EAEAEA; }
