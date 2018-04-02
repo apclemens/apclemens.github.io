@@ -55,7 +55,7 @@ function transition_over(page, index) {
     }, 500);
     $("#links>li:nth-child(" + (index + 1) + ")").addClass('current');
     $('#stem').animate({
-        'left': '' + (25 * index + 12.5) + '%'
+        'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
     }, 500, function() {
         $('#section' + prev_index).remove();
         $('.section-page').css('left', 0);
@@ -75,7 +75,7 @@ function transition_up(page, index) {
     setTimeout(function() {
         $('#stem').css({
             'opacity': 1,
-            'left': '' + (25 * index + 12.5) + '%'
+            'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
         });
         $("#links>li:nth-child(" + (index + 1) + ")").addClass('current');
         $('#stem').animate({
