@@ -190,7 +190,7 @@ function transition_open_section(index) {
     $('#non-links').css('height', 0);
     $('#stem').css({
         'opacity': 1,
-        'left': '' + (25 * index + 12.5) + '%'
+        'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
     });
     $('#stem').css('height', 45);
     $('#section').css({
