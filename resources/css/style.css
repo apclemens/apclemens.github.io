@@ -131,8 +131,7 @@ li.current > a {
   margin: 10px; }
 
 #stem {
-  border-style: solid;
-  border-width: 2.5px;
+  border: 2px solid black;
   width: 0;
   z-index: 0;
   position: relative;
