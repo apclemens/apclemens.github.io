@@ -55,7 +55,7 @@ function transition_over(page, index) {
     }, 500);
     $("#links>li:nth-child(" + (index + 1) + ")").addClass('current');
     $('#stem').animate({
-        'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
+        'left': '' + (25 * index + 12.5) + '%'
     }, 500, function() {
         $('#section' + prev_index).remove();
         $('.section-page').css('left', 0);
@@ -75,7 +75,7 @@ function transition_up(page, index) {
     setTimeout(function() {
         $('#stem').css({
             'opacity': 1,
-            'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
+            'left': '' + (25 * index + 12.5) + '%'
         });
         $("#links>li:nth-child(" + (index + 1) + ")").addClass('current');
         $('#stem').animate({
@@ -190,7 +190,7 @@ function transition_open_section(index) {
     $('#non-links').css('height', 0);
     $('#stem').css({
         'opacity': 1,
-        'left': 'calc(' + (25 * index + 12.5) + '% - 2px)'
+        'left': '' + (25 * index + 12.5) + '%'
     });
     $('#stem').css('height', 45);
     $('#section').css({
