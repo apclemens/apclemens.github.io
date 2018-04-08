@@ -93,10 +93,8 @@ li.current > a {
 
 #front-image {
   float: right;
-  padding-right: 10px;
+  padding-left: 10px;
   height: 200px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 
 #non-links {
