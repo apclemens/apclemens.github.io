@@ -91,10 +91,9 @@ li.current > a {
   transform: rotate3d(0,0,1,180deg);
 }
 
-
 #front-image {
   float: right;
-  padding-left: 10px;
+  padding-right: 10px;
   height: 200px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
