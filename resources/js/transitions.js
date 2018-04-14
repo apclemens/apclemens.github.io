@@ -84,9 +84,7 @@ function transition_up(page, index) {
     }, 250);
     setTimeout(function() {
         $('#section').animate({
-            'height': 250
-        }, 250);
-        $('#section').css({
+            'height': 250,
             'opacity': 1
         });
     }, 500);
