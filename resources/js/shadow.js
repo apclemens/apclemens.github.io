@@ -3,7 +3,7 @@ window.onmousemove = function(e) {
     var x = (e.clientX - $(window).width()/2);
     var y = -(e.clientY - $(window).height()/2);
     $('.shadow').css('box-shadow', ''+(-x / 83)+'px '+(y / 83)+'px 35px var(--box-shadow-color)')
-
+/*
 	// change picture
 	// distance from mouse to center
 	x /= $(window).width();
@@ -17,6 +17,8 @@ window.onmousemove = function(e) {
 	// angle
 	var theta = parseInt((Math.atan2(y,x) / Math.PI + 1) / 2 * 16);
 	$('#front-image').attr('src', '/resources/images/front/'+distance_file+'-'+theta+'.jpg');
+*/
+
 }
 }
 
