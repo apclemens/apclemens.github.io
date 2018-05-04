@@ -53,7 +53,7 @@ li.current > a {
 
 .shadow {
   --box-shadow-color: black;
-  box-shadow: 0px 0px 50px var(--box-shadow-color);
+  box-shadow: 0px 0px 35px var(--box-shadow-color);
 }
 
 #content {
