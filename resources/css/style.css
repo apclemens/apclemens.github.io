@@ -48,7 +48,7 @@ li.current > a {
   padding: 5px;
 }
 #header a:hover {
-  padding: 0;
+  padding: 2px;
 }
 
 .shadow {
