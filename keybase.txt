@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/apclemens
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andrewclemens.com
+  * I am apclemens (https://keybase.io/apclemens) on keybase.
+  * I have a public key with fingerprint 6726 ABBF 91F7 9456 848B  F109 4112 A886 00EA 02AA
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d76eb7ee0aa56926a16cf25b6e6e0df29a6c66da4f01409b26f2c776fe17ba500a",
+      "fingerprint": "6726abbf91f79456848bf1094112a88600ea02aa",
+      "host": "keybase.io",
+      "key_id": "4112a88600ea02aa",
+      "kid": "0101c92be548c5b4f8ddada6aba88f497f07362386297e58ef626e0e14f215b01aa90a",
+      "uid": "5cb85f17cd1908f0a4fe0a3452751919",
+      "username": "apclemens"
+    },
+    "service": {
+      "hostname": "andrewclemens.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1535561679,
+  "expire_in": 157680000,
+  "prev": "4c603c84bd682567c359664e96e75e6f0234b6a82d2e6b560746f8c087ba68d4",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMNyAnicbZJrTBxVFMcXttAW5ZGi1hD6YLBRKJKZuzP3zmwjL61BbTVFjPSVdR53
+YARmt7MLC6EYCBQjGNpKRWlSgQotWGvbYEmLIK5ABEG2sQU0FIzgoyBWQgmFEltn
+SPnm/XJzz/2d//mfc293oNkU4JO4oanMNO37mU+/51SOaX+Z11tACHYpn7AWEJl4
+ZcNZEna6bJmKRFgJkgKkhCAWEMYkzzOQA5CnoCgDRoAYYlKSAcdDEUKJp2WSoklO
+AFAGIkJQxhQSeIYkeSKGkBU1HWsOTVFduixEuowgyBwlI45mIEuzgkyRHE1RgGdZ
+SJKYJwFvJGbYnUaGbk7gnThWsesx/WBbsfc//KpvkhI5IGCGZkVGoGVWkniJ14vq
+uExzSCaRBQILCwGHMMNiGQK9G0zRMqAYgaR4nlvxnbMix4gCy8gUEiWKI1mZ1HvV
+x2GhGYAYiqM4A3RiTeWzsU7zDjELZ2PVSRTGEHo4VxGxMVmjlVVElTTsfojFivZs
+XcGh2V120Z6lX2e4XA6n1Uh35TsM3o0F20Mlm6Cokj5NPSMXa07FrhJWSidFl2JI
+U4yFYSAFERdD4DyHomGbYhAMgiypL6MOzjVmJ0LSIrK0IEEWMBCJFoaDkMYcxIjB
+UCaBhRYgzwIJYCgwkEQ0lFmRZPVHhaxEE0Zvh1Q7YWV1m3y6LulU0lXelaNhovBb
+z4E1Jp8Ak7+fr/HLTAHrQ1b/Xnlu8INkVFw4daD73JY3sr5q29Q/70zLCxmdLY5M
+fE0bCD21yeld+8HMaWAubapYvv/Lo+OHU9b1tvmOX+pcIsNfncr4N+vq5l39Rd9/
+0ppyJLI5dp0ZXN1198Ly1L0n46JvWLSOPz72XtgZtsfWvu25M9zsK4ntk1CpnqqN
+WHx/yNaet03yOXF2+MNn/NW1l58qe3lka70lYS5louDPpiq/w0mve5bqv5g/tqbk
+98cbj7LEwEcjF4NRzbXAH6ta4883LoJU86e/vXcM23otT2y9mQodrpmZ+iuBHuRC
+w/tKR/ddXNic/eU7fjk78yvD07v+en7wzIK3xhI/Mb3QlxfeE908+GA0FISNgVgp
+5wfVW93qqVko3uu+Ux14aWOLY2x/g3ytbHFC3ViSGNEd1fbiXF9FedHx7ZrlRMi9
+I0p+Vd/4np/cw6lpe0vaS5+NDGrMyOwvOnmj106s/3XH0OdaYcWt4511vUeFv9/a
+EtF/cGnHQtd0x/anD04jt19PVG3TgHsR1J2semQmNNnU1xLZFT942dnQpVaijtA4
+orcz4lZ7ivl60tju1tSwukT/tuQrc6iZij/tjR71zL57/7vlSof5hUPfmB+7Yxv5
+55y1JYF6aWSyKehsaeTuIaphQ3pMHREXJl6P+jnppv/tN0fKw6193trzPcPWwuC0
+u1+HzXuyJoOVoLeDbyfw/wGWAMiJ
+=IGvH
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/apclemens
+
+==================================================================
