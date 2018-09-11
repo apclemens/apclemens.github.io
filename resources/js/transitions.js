@@ -5,7 +5,7 @@ $('#links').find('a').each(function(index, value) {
     });
 });
 
-$('#inline-contact).click(function(event) {
+$('#inline-contact').click(function(event) {
     event.preventDefault();
     transition_to('/section_parts/contact', 3, '/contact', 'andrew clemens - contact', true)
 });
