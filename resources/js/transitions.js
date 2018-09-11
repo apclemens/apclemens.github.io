@@ -100,7 +100,7 @@ function transition_up(page, index) {
     }, 750);
     setTimeout(function() {
         if (index != 3) set_scroll();
-        else $('#cat-image-wrapper').click(function(){window.location.href="https://www.instagram.com/_jackie_the_cat/"});
+        else $('#cat-image-wrapper').click(function(){window.open("https://www.instagram.com/_jackie_the_cat/", '_blank');});
     }, 1100);
 }
 
