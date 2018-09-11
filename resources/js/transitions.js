@@ -5,6 +5,11 @@ $('#links').find('a').each(function(index, value) {
     });
 });
 
+$('#inline-contact).click(function(event) {
+    event.preventDefault();
+    transition_to('/section_parts/contact', 3, '/contact', 'andrew clemens - contact', true)
+});
+
 window.onpopstate = function(e) {
     if (e.state) {
         if (e.state.newtitle == "andrew clemens") {
