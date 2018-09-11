@@ -269,3 +269,16 @@ li.current > a {
     background-color: white;
     color: unset;
 }
+
+#inline-contact:hover {
+    background-color: unset;
+    color: unset;
+    border: 1px solid black;
+    margin: -1px;
+}
+
+#inline-contact {
+    padding: 0;
+    font-family: unset;
+    border-bottom: 1px solid black;
+}
