@@ -12,7 +12,7 @@ window.onkeyup = function(e) {
             transition_to('/section_parts/websites', 1, '/websites', 'andrew clemens - websites', true);
             break;
         case 84: // t
-            transition_to('/section_parts/themes', 2, '/themes', 'andrew clemens - themes', true);
+            transition_to('/section_parts/web_apps', 2, '/web_apps', 'andrew clemens - web apps', true);
             break;
         case 67: // c
             transition_to('/section_parts/contact', 3, '/contact', 'andrew clemens - contact', true);
