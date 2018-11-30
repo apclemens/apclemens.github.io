@@ -5,5 +5,5 @@ collections:
     output: false
   projects:
     output: false
-  themes:
+  web_apps:
     output: false
