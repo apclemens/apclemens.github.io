@@ -282,3 +282,72 @@ li.current > a {
     font-family: unset;
     border-bottom: 1px solid black;
 }
+
+#project-info {
+    display: none;
+}
+
+#overlay {
+    border: 8px solid black;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    background-color: rgba(0,0,0,.7);
+    overflow: hidden;
+}
+
+#overlay #close {
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: red;
+}
+
+#overlay-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas:
+        "title title"
+        "link image"
+        "body image";
+    margin: 20px;
+    height: calc(100% - 40px);
+}
+
+#overlay-content .overlay-title {
+    grid-area: title;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#overlay-content .overlay-image {
+    grid-area: image;
+    height: 100%;
+    padding-left: 20px;
+}
+
+#overlay-content .overlay-link {
+    grid-area: link;
+}
+
+#overlay-content .overlay-link a {
+    border: 2px solid black;
+    background-color: white;
+}
+#overlay-content .overlay-link a:hover {
+    background-color: black;
+    color: white;
+}
+
+#overlay-content .overlay-body {
+    grid-area: body;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
