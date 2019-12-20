@@ -15,6 +15,7 @@ $('a.project').click(function(event) {
     $('#overlay').css('top', box.y);
     $('#overlay').css('bottom', $(window).height() - box.y - box.height);
     $('#overlay').css('display', 'block');
+    $('#overlay').css('opacity', 0);
     // 2. give overlay animated class
     // 3. change size of overlay
     $('#overlay').animate({
@@ -22,6 +23,7 @@ $('a.project').click(function(event) {
         right: 10,
         top: 10,
         bottom: 10,
+        opacity: 1,
     }, 300, function() {
     
     
@@ -31,6 +33,7 @@ $('#close').click(function(event) {
         right: $(window).width() - box.x - box.width,
         top: box.y,
         bottom: $(window).height() - box.y - box.height,
+        opacity: 0,
     }, 300, function() {
         $('#close').off('click');
         $('#overlay').css('display', 'none');
