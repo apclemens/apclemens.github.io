@@ -352,3 +352,13 @@ li.current > a {
     padding: 10px;
     margin-top: 20px;
 }
+
+a.normal {
+  padding: 0;
+  text-decoration: underline;
+}
+a.normal:hover {
+  background-color: rgba(0,0,0,0);
+  color: red;
+  border: none;
+}
