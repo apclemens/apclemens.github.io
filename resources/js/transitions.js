@@ -24,6 +24,7 @@ window.onpopstate = function(e) {
 
 function transition_to(page, index, newurl, newtitle, setstate) {
     document.title = newtitle;
+    anagram(false);
     if (setstate) {
         window.history.pushState({
             "page": page,
@@ -107,6 +108,7 @@ function transition_up(page, index) {
 }
 
 function transition_down(setstate) {
+    anagram(true);
     if (document.title == 'andrew clemens') {
         return;
     }
@@ -187,6 +189,7 @@ function transition_open_front() {
 }
 
 function transition_open_section(index) {
+    anagram(true);
     if (index == -1) {
         transition_open_front();
         return;
